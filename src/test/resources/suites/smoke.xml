@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Sadece "smoke" grubundaki testler. Çalıştır: mvn test -Dsuite=smoke -->
+<suite name="Library - Smoke" verbose="1">
+
+    <parameter name="env" value="staging"/>
+    <parameter name="baseUrl" value="https://staging.library.example.com"/>
+
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.servet.library"/>
+        </packages>
+    </test>
+</suite>

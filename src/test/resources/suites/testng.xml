@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Tüm testler (varsayılan suite). Çalıştır: mvn test -->
+<suite name="Library - Full Suite" verbose="1">
+
+    <parameter name="env" value="qa"/>
+    <parameter name="baseUrl" value="https://qa.library.example.com"/>
+
+    <test name="Unit and Flow Tests">
+        <classes>
+            <class name="com.servet.library.LifecycleTest"/>
+            <class name="com.servet.library.IsbnValidatorTest"/>
+            <class name="com.servet.library.LibraryRulesTest"/>
+            <class name="com.servet.library.BorrowFlowTest"/>
+            <class name="com.servet.library.EnvironmentTest"/>
+        </classes>
+    </test>
+</suite>

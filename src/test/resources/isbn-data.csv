@@ -1,0 +1,11 @@
+isbn,expectedValid,description
+978-0-306-40615-7,true,tireli geçerli ISBN
+9780134685991,true,Effective Java 3rd Edition
+9781617294945,true,Spring in Action 5th Edition
+9780596009205,true,Head First Java
+978-3-16-148410-0,true,Wikipedia örnek ISBN
+9780306406158,false,yanlış kontrol hanesi
+9780134685990,false,yanlış kontrol hanesi
+978030640615,false,12 hane (bir eksik)
+97803064061577,false,14 hane (bir fazla)
+978-0-306-4061X-7,false,rakam olmayan karakter
